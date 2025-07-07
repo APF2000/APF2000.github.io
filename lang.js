@@ -63,6 +63,14 @@ languageSwitcher.addEventListener("change", (e) => {
 	updateLanguage(selectedLang);
 });
 
-const savedLang = localStorage.getItem("lang") || "en";
-languageSwitcher.value = savedLang;
-updateLanguage(savedLang);
+const availableLanguages = Object.keys(translations);
+
+const browserLang = (navigator.language || navigator.userLanguage || 'en').substring(0, 2);
+
+const savedLang = localStorage.getItem("lang");
+
+const defaultLang = savedLang || (availableLanguages.includes(browserLang) ? browserLang : 'en');
+
+languageSwitcher.value = defaultLang;
+updateLanguage(defaultLang);
+
