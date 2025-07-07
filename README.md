@@ -1,2 +1,2 @@
-# apf-data-science-site
+# APF Data Science
 Website for freelance and miscelaneous projects propagation.
