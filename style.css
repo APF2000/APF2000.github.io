@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	background-color: #f9f9f9;
+	color: #333;
+	line-height: 1.6;
+}
+
+header {
+	background-color: #0c2340;
+	color: #fff;
+	padding: 1.5rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	color: #fff;
+	margin-left: 2rem;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.hero {
+	padding: 4rem 2rem;
+	text-align: center;
+	background: linear-gradient(to right, #1c3c6b, #28527a);
+	color: white;
+}
+
+.hero h1 {
+	font-size: 2.8rem;
+	margin-bottom: 1rem;
+}
+
+.hero p {
+	font-size: 1.2rem;
+	max-width: 700px;
+	margin: auto;
+}
+
+.section {
+	padding: 3rem 2rem;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.section h2 {
+	margin-bottom: 1rem;
+	color: #0c2340;
+	font-size: 2rem;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.card {
+	background: #fff;
+	border-radius: 10px;
+	padding: 2rem;
+	box-shadow: 0 0 10px rgba(0,0,0,0.05);
+	transition: transform 0.2s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}
+
+footer {
+	background: #0c2340;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+	margin-top: 3rem;
+	font-size: 0.9rem;
+}
+
+.contact-btn {
+	display: inline-block;
+	margin-top: 2rem;
+	background: #ffcc00;
+	color: #000;
+	padding: 0.8rem 1.5rem;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+	background: #e6b800;
+}
